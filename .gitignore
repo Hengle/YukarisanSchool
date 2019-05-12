@@ -10,3 +10,5 @@
 *.log
 *
 *.log
+Library/ScriptAssemblies/Assembly-CSharp.dll
+Library/StateCache/SceneView/a58a94-mainStage.json
