@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f183272568e6f94382e3b59c0de76cd, type: 3}
+  m_Name: YukarisanSchool.project
+  m_EditorClassIdentifier: 
+  excelList: []
+  chapterDataList:
+  - chapterName: Setting
+    excelList: []
+    excelDir: {fileID: 102900000, guid: 7197459392d7eec46820758f2e7307e0, type: 3}
+  - chapterName: Notice
+    excelList: []
+    excelDir: {fileID: 102900000, guid: a918b53542bb8cf428fe79b0f62713a8, type: 3}
+  - chapterName: Chapter00
+    excelList: []
+    excelDir: {fileID: 102900000, guid: a962a7b964cff5d4db27876b7f1b769a, type: 3}
+  - chapterName: Chapter01
+    excelList: []
+    excelDir: {fileID: 102900000, guid: 1a06ff4d3890dae4daee8129325b5962, type: 3}
+  - chapterName: Chapter02
+    excelList: []
+    excelDir: {fileID: 102900000, guid: b12caa16d5aae0545962826200e22d7c, type: 3}
+  - chapterName: Chapter03
+    excelList: []
+    excelDir: {fileID: 102900000, guid: 2c0c31628ab24084a907c4681003118f, type: 3}
+  checkWaitType: 0
+  checkWhiteSpaceEndOfCell: 1
+  checkTextCount: 1
+  scenarios: {fileID: 11400000, guid: 986f320b1d1834a4fa187eec98318087, type: 2}
+  autoImportType: 0
+  convertPath: 
+  convertVersion: 0
+  isAutoUpdateVersionAfterConvert: 0
+  isAutoConvertOnImport: 0
+  customInportSpriteFolders:
+  - {fileID: 102900000, guid: 5327d2db7d8e5e5458ff40f9e33806ab, type: 3}
+  - {fileID: 102900000, guid: ca9cf1ed7b8b0c44eb6965737eeb4724, type: 3}
+  - {fileID: 102900000, guid: 91e51db3f703b2245aeb480b9a79c7b9, type: 3}
+  - {fileID: 102900000, guid: 427626288a18c024f9caed73dbf41050, type: 3}
+  - {fileID: 102900000, guid: 8938e7ba74317464982722df1b0d16d4, type: 3}
+  customInportAudioFolders:
+  - {fileID: 102900000, guid: f49f9729841c83a4181c937d59f90af7, type: 3}
+  - {fileID: 102900000, guid: db3cefb7b3d949d408fe997598ee39cd, type: 3}
+  - {fileID: 102900000, guid: c264dd45a16482c4092d07f22b4000a1, type: 3}
+  - {fileID: 102900000, guid: 18788810f71454648a74b0f6b2f2471a, type: 3}
+  customInportMovieFolders: []
+  quickImport: 0
+  parseFormula: 0
+  parseNumreic: 0
