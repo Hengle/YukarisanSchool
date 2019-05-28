@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/YukarisanSchool/YukarisanSchool.unity
-    guid: 37423ff53662e274180d29b34d664606
+    path: Assets/01.scene/Home.unity
+    guid: 278c90d520e7c5d478f6d2157106eec8
+  - enabled: 1
+    path: Assets/01.scene/YukarisanSchool.unity
+    guid: c0ae3bff55415d644ac1c386d8bad695
   m_configObjects: {}
