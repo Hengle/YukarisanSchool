@@ -8,6 +8,7 @@
 *.dll
 *.pdb
 *.log
-v15
-Library
-Debug
+Library/
+Debug/
+Temp/
+.vs/

@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class YukarisanSchoolScene : SceneBase
 {
+    public override IEnumerator Initiate()
+    {
+        yield return StartCoroutine(base.Initiate());
+    }
+
     public override IEnumerator LoadData()
     {
-        return base.LoadData();
+        yield return StartCoroutine(base.LoadData());
     }
 
     public override IEnumerator SetByLoadedData()
     {
-        return base.SetByLoadedData();
+        yield return StartCoroutine(base.SetByLoadedData());
     }
 
-    public override IEnumerator Initiate()
-    {
-        return base.Initiate();
-    }
+         
+
+
 
 
 }
