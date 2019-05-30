@@ -5,10 +5,13 @@ using Utage;
 
 public class SchoolMan : CommonBase
 {
-    [SerializeField] private TitleMan titleMan_ = default;
-    [SerializeField] private TitleMan ClassMan_ = default;
-    [SerializeField] private AdvEngineStarter advEngineStarter_ = default;
+   public AdvEngine advEngine_ = default;
 
 
-
+    public void StartEngine()
+    {
+        Debug.Log("시작");
+        advEngine_.StartGame();
+    }
+    
 }

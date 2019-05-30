@@ -7,7 +7,6 @@ using Def.Enum;
 
 public class HomeScene : SceneBase
 {
-
     public override IEnumerator LoadData()
     {
         return base.LoadData();
@@ -27,7 +26,8 @@ public class HomeScene : SceneBase
     private void GotoSchool()
     {
         StartCoroutine(FadeMan.ins_.FadeInOut(enumFadeType.FadeOut, fadeTime_,
-            () => { SceneMan.ins.PushScene(enumSceneName.YukarisanSchool, LoadSceneMode.Single); }
-            ));
+            () => {
+                StartCoroutine(SceneMan.ins.PushScene(enumSceneName.YukarisanSchool, LoadSceneMode.Single));
+            }));
     }
 }

@@ -30,17 +30,13 @@ public class FadeMan : MonoBehaviour
             yield break;               
         }
 
+        Debug.Log("<color=yellow>페이드 시작</color>");
         isProcessing_ = true;
         yield return StartCoroutine(Process(enumFade, time));
-
-        Debug.Log("<color=green>페이드 완료</color>");
         isProcessing_ = false;
+        Debug.Log("<color=green>페이드 완료</color>");
 
-        if (onDone != null)
-        {
-            Debug.Log("페이드처리 이후 할일이 있음");
-            onDone();
-        }
+        onDone?.Invoke();
     }
 
     private IEnumerator Process(enumFadeType enumFade, float time)
@@ -48,7 +44,7 @@ public class FadeMan : MonoBehaviour
         cg_.blocksRaycasts = true;
         if (time <= 0)
         {
-            Debug.LogWarning("페이드 시간은 0보다 큰 양수여야합니다.");
+            Debug.LogWarning("<color=red>페이드 시간은 0보다 큰 양수여야합니다.</color>");
             switch (enumFade)
             {
                 case enumFadeType.FadeIn: cg_.alpha = 0f; break;

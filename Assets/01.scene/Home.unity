@@ -503,9 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b058846946cad24eae1937637d97941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleMan_: {fileID: 0}
-  ClassMan_: {fileID: 0}
-  advEngineStarter_: {fileID: 0}
+  advEngine_: {fileID: 0}
 --- !u!1 &1560568239
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +717,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e51b9c951221a44b5a5d30d8004871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneMan_: {fileID: 582210973}
+  fadeMan_: {fileID: 6852168195942468308}
+  schoolMan_: {fileID: 1430772111}
 --- !u!4 &1988589644
 Transform:
   m_ObjectHideFlags: 0

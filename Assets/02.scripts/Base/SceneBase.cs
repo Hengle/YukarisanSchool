@@ -12,34 +12,30 @@ public class SceneBase : CommonBase
     /// <summary> 초기화 시작</summary>
     public override  IEnumerator Initiate()
     {
-        Debug.Log("<color=yellow>" + name + ":Initiate" + "</color>");
-        yield return StartCoroutine(LoadData());
-        yield return StartCoroutine(SetByLoadedData());
+        yield return StartCoroutine(base.Initiate());
         yield return FadeMan.ins_.FadeInOut(enumFadeType.FadeIn, fadeTime_, OnFadeInDone);        
     }
 
     /// <summary>데이터 로드</summary>
     public override IEnumerator LoadData()
     {
-        Debug.Log("<color=yellow>" + name + ":LoadData" + "</color>");
-        yield return null;
+        yield return StartCoroutine(base.LoadData());
     }
 
     /// <summary> 로드한 데이터를 이용해 세팅</summary>
     public override IEnumerator SetByLoadedData()
     {
-        Debug.Log("<color=yellow>" + name + ":SetByLoadedData" + "</color>");
-        yield return null;
+        yield return StartCoroutine(base.SetByLoadedData());
     }
 
-    public override IEnumerator SetVariable()
+    public override IEnumerator SetComponents()
     {
-        yield return null;
+        yield return StartCoroutine(base.SetComponents());
     }
 
     public override IEnumerator GetReady()
     {
-        yield return null;
+        yield return StartCoroutine(base.GetReady());
     }
 
     public virtual void OnFadeOutDone()
