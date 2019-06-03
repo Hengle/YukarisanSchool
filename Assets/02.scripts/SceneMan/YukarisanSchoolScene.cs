@@ -31,7 +31,7 @@ public class YukarisanSchoolScene : SceneBase
     public override IEnumerator GetReady()
     {
         yield return StartCoroutine(base.GetReady());
-        Managers.ins_.schoolMan_.advEngine_
+        Managers.ins_.schoolMan_.Open();
     }
 
 }

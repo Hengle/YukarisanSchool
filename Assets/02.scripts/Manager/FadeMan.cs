@@ -22,6 +22,18 @@ public class FadeMan : MonoBehaviour
     /// <param name="time"></param>
     /// <param name="onDone"></param>
     /// <returns></returns>
+    public void FadeInOut(enumFadeType enumFade, float time)
+    {
+        StartCoroutine(Process(enumFade, time));
+    }
+
+
+
+    /// <summary>페이드인, 아웃 처리</summary>
+    /// <param name="enumFade"></param>
+    /// <param name="time"></param>
+    /// <param name="onDone"></param>
+    /// <returns></returns>
     public IEnumerator FadeInOut(enumFadeType enumFade, float time, Action onDone = null)
     {
         if (isProcessing_)
