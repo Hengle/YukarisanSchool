@@ -9,6 +9,7 @@
 *.pdb
 *.log
 Library/
+Library/ScriptAssemblies/
 Debug/
 Temp/
 .vs/
