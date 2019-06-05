@@ -196,8 +196,8 @@ LineRenderer:
   m_GameObject: {fileID: 147560679}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -585,9 +585,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.00023234636
+    y: 0
     width: 1
-    height: 0.9995353
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -3955,9 +3955,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.00023234636
+    y: 0
     width: 1
-    height: 0.9995353
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -4371,6 +4371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581555d5e29b22543b66c9021428729f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lineRenderController_: {fileID: 147560682}
 --- !u!1 &1691821532
 GameObject:
   m_ObjectHideFlags: 0

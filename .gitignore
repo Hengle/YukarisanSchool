@@ -8,6 +8,7 @@
 *.dll
 *.pdb
 *.log
+*.dwlt
 Library/
 Library/ScriptAssemblies/
 Debug/

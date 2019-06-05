@@ -16,15 +16,14 @@ public class LineRendererPos : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        Debug.Log("OnMouseEnter()");
+        Debug.Log("anchoredPosition;" + rectTransform_.anchoredPosition);
     }
 
     private void OnMouseDrag()
     {
-        Debug.Log("anchoredPosition;" + rectTransform_.anchoredPosition);
-        Debug.Log("마우스:" + Input.mousePosition);
-        rectTransform_.anchoredPosition = Input.mousePosition;
-
-
+        if (lineRendererCtrl_.isEditMode_)
+        {
+            rectTransform_.anchoredPosition = Input.mousePosition;
+        }
     }
 }
