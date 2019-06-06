@@ -12,6 +12,7 @@
         //페이드
         public enum enumFadeType
         {
+            None,
             FadeIn,
             FadeOut,
         }

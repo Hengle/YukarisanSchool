@@ -7,6 +7,8 @@ using Def.Enum;
 
 public class UtageSendMessage : MonoBehaviour
 {
+    public LineController lineController_;
+         
     public LineRenderController lineRenderController_;
     private enumUtageSendMessage enumUtageSendMessage_;
     private bool isDone_ = false;
@@ -27,17 +29,17 @@ public class UtageSendMessage : MonoBehaviour
                 break;
 
             case enumUtageSendMessage.UnityTweenLines:
+                string lineId = string.Empty;
+                float tweenTime;
+                string fadeType = string.Empty;
                 Vector2 pos01;
                 Vector2 pos02;
-                float tweenTime;
-                string tmp = string.Empty;
 
-                pos01 = ConvertStringToVec2(command.Arg2);
-                pos02 = ConvertStringToVec2(command.Arg3);
-                tweenTime = float.Parse(command.Arg4);
-
-                TweenLines(pos01, pos02, tweenTime);
-
+                lineId = command.Arg2;
+                tweenTime = float.Parse(command.Arg3);
+                fadeType = command.Arg4;
+                ConvertStringToVec2(command.Arg5, out pos01, out pos02);
+                DrawLines(lineId, tweenTime, fadeType, pos01, pos02);
                 break;
 
             default:
@@ -71,21 +73,23 @@ public class UtageSendMessage : MonoBehaviour
     }
 
     /// <summary> 두 점을 이동이켜 선을 만든다.</summary>
+    /// <param name="id">통제용 아이디</param>
+    /// <param name="fadeType">페이드 유형</param>
     /// <param name="pos01">첫번째 점의 위치</param>
     /// <param name="pos02">두번째 점의 위치</param>
     /// <param name="time">트윈 시간</param>
-    private void TweenLines(Vector2 pos01, Vector2 pos02, float time)
+    private void DrawLines(string id, float time, string fadeType, Vector2 pos01, Vector2 pos02)
     {
-        lineRenderController_.TwennLines(pos01, pos02, time, () => { isDone_ = true; });
+        lineController_.DrawLine(id, time, fadeType, pos01, pos02, () => { isDone_ = true; });
     }
 
-    private Vector2 ConvertStringToVec2(string str)
+    private void ConvertStringToVec2(string str, out Vector2 pos01, out Vector2 pos02)
     {
-        if (str.StartsWith("(") && str.EndsWith(")"))
-        {
-            str = str.Remove(0, 1);
-            str = str.Remove(str.ToCharArray().Length - 1);
-        }
-        return new Vector2(float.Parse(str.Split(',')[0]), float.Parse(str.Split(',')[1]));
+        string[] pos;
+        str = str.Replace("(", string.Empty);
+        str = str.Replace(")", string.Empty);
+        pos = str.Split('/');
+        pos01 = new Vector2(float.Parse(pos[0].Split(',')[0]), float.Parse(pos[0].Split(',')[1]));
+        pos02 = new Vector2(float.Parse(pos[1].Split(',')[0]), float.Parse(pos[1].Split(',')[1]));
     }
 }

@@ -389,9 +389,11 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (0,0)
       - 1
+      - 2
+      - FadeIn
+      - (0,0)/(0,0)
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -416,10 +418,10 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (800,600)
       - 1
+      - 2
       - 
+      - (0,0)/(800,600)
       - 
       - 
       - 
@@ -447,9 +449,11 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (400,600)
       - 1
+      - 2
+      - 
+      - (0,0)/(400,600)
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -473,10 +477,10 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (800,600)
       - 1
+      - 2
       - 
+      - (0,0)/(800,600)
       - 
       - 
       - 
@@ -503,9 +507,11 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (1920,1080)
       - 1
+      - 2
+      - FadeOut
+      - (0,0)/(1920,1080)
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -533,7 +539,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 368
+    textLength: 391
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -1143,9 +1149,11 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (0,0)
       - 1
+      - 2
+      - FadeIn
+      - (0,0)/(0,0)
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1167,7 +1175,14 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 3
       debugIndex: 3
-      strings: []
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
@@ -1176,10 +1191,10 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (800,600)
       - 1
+      - 2
       - 
+      - (0,0)/(800,600)
       - 
       - 
       - 
@@ -1207,9 +1222,11 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (400,600)
       - 1
+      - 2
+      - 
+      - (0,0)/(400,600)
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1233,10 +1250,10 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (800,600)
       - 1
+      - 2
       - 
+      - (0,0)/(800,600)
       - 
       - 
       - 
@@ -1263,9 +1280,11 @@ MonoBehaviour:
       strings:
       - SendMessage
       - UnityTweenLines
-      - (0,0)
-      - (1920,1080)
       - 1
+      - 2
+      - FadeOut
+      - (0,0)/(1920,1080)
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
@@ -1299,7 +1318,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 368
+    textLength: 391
     headerRow: 0
   - rows:
     - rowIndex: 0
