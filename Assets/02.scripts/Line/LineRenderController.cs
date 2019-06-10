@@ -15,8 +15,10 @@ public class LineRenderController : MonoBehaviour
     public bool isEditMode_ = false;
     public float width_ = 0.2f;
 
-
+    public float time_ = 0f;
     private Color color_ = default;
+    private enumFadeType enumFade;
+
 
     private void Awake()
     {
@@ -44,16 +46,15 @@ public class LineRenderController : MonoBehaviour
         }
     }
 
-    public void DrawLines(float time, string fade, Vector2 pos01, Vector2 pos02, Action onDone )
+    public void DrawLines(Vector2 pos01, Vector2 pos02, Action onDone )
     {
-        enumFadeType enumFade;
-        Enum.TryParse(fade, out enumFade);
+
         Color tmpColor = color_;
         tmpColor.a = 0;
 
         Sequence sequence;
         sequence = DOTween.Sequence();
-        sequence.OnStart( () => listPos_[0].DOAnchorPos(pos01, time));
+        sequence.OnStart( () => listPos_[0].DOAnchorPos(pos01, time_));
 
         switch (enumFade)
         {
@@ -61,28 +62,23 @@ public class LineRenderController : MonoBehaviour
                 break;
 
             case enumFadeType.FadeIn:
-                sequence.Join( mat_.DOColor(color_, time));
+                sequence.Join( mat_.DOColor(color_, time_));
                 break;
 
             case enumFadeType.FadeOut:
-                sequence.Join(mat_.DOColor(tmpColor, time));
+                sequence.Join(mat_.DOColor(tmpColor, time_));
                 break;
         }
 
-        sequence.Join(listPos_[1].DOAnchorPos(pos02, time));
-
-        sequence.OnComplete(() => { onDone?.Invoke(); });
-
-        /*
-
-        listPos_[0].DOAnchorPos(pos01, time).OnComplete(() => {
-            onDone?.Invoke();
-        });
-
-        listPos_[1].DOAnchorPos(pos02, time).OnComplete(() => {
-            onDone?.Invoke();
-        });
-        */
+        sequence.Join(listPos_[1].DOAnchorPos(pos02, time_));
+        sequence.OnComplete(() => { onDone?.Invoke(); });        
     }
+
+    public void SetLines(float time, string fade, )
+    {
+        time_ = time;
+        Enum.TryParse(fade, out enumFade);
+    }
+
 
 }

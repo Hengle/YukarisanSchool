@@ -11,36 +11,47 @@ public class UtageSendMessage : MonoBehaviour
          
     public LineRenderController lineRenderController_;
     private enumUtageSendMessage enumUtageSendMessage_;
-    private bool isDone_ = false;
+    private bool isWaite_ = true;
 
     //SendMessageコマンドが実行されたタイミング
     private void OnDoCommand(AdvCommandSendMessage command)
     {
         Enum.TryParse(command.Name, out enumUtageSendMessage_);
-        isDone_ = false;
+        isWaite_ = true;
 
         switch (enumUtageSendMessage_)
         {
             case enumUtageSendMessage.UnityFadeIn:
-                StartCoroutine(FadeMan.ins_.FadeInOut(enumFadeType.FadeIn, float.Parse(command.Arg2), () => { isDone_ = true; }));
-                break;
-            case enumUtageSendMessage.UnityFadeOut:
-                StartCoroutine(FadeMan.ins_.FadeInOut(enumFadeType.FadeOut, float.Parse(command.Arg2), () => { isDone_ = true; }));
+                StartCoroutine(FadeMan.ins_.FadeInOut(enumFadeType.FadeIn, float.Parse(command.Arg2), () => { isWaite_ = false; }));
                 break;
 
-            case enumUtageSendMessage.UnityTweenLines:
+            case enumUtageSendMessage.UnityFadeOut:
+                StartCoroutine(FadeMan.ins_.FadeInOut(enumFadeType.FadeOut, float.Parse(command.Arg2), () => { isWaite_ = false; }));
+                break;
+
+            case enumUtageSendMessage.UnityLinesSet:
+
+                break;
+
+            case enumUtageSendMessage.UnityLinesTween:
                 string lineId = string.Empty;
                 float tweenTime;
                 string fadeType = string.Empty;
                 Vector2 pos01;
                 Vector2 pos02;
 
-                lineId = command.Arg2;
-                tweenTime = float.Parse(command.Arg3);
+                isWaite_ = (bool.Parse)(command.Arg2);
+                string[] str = command.Arg3.Split(',');
+                lineId = str[0];
+                tweenTime = float.Parse(str[1]);
                 fadeType = command.Arg4;
                 ConvertStringToVec2(command.Arg5, out pos01, out pos02);
-                DrawLines(lineId, tweenTime, fadeType, pos01, pos02);
+
                 break;
+
+            case enumUtageSendMessage.UnityLinesClean:
+                lineController_.CleanAllLine();
+                 break;
 
             default:
                 Debug.Log("<color=red>존재하지 않는 메소드:" + command.Name + "</color>");
@@ -55,14 +66,22 @@ public class UtageSendMessage : MonoBehaviour
         switch (enumUtageSendMessage_)
         {
             case enumUtageSendMessage.UnityFadeIn:
-                command.IsWait = isDone_;
+                command.IsWait = isWaite_;
                 break;
             case enumUtageSendMessage.UnityFadeOut:
-                command.IsWait = isDone_;
+                command.IsWait = isWaite_;
                 break;
 
-            case enumUtageSendMessage.UnityTweenLines:
-                command.IsWait = isDone_;
+            case enumUtageSendMessage.UnityLinesSet:
+                command.IsWait = isWaite_;
+                break;
+
+            case enumUtageSendMessage.UnityLinesTween:
+                command.IsWait = isWaite_;
+                break;
+
+            case enumUtageSendMessage.UnityLinesClean:
+                command.IsWait = false;
                 break;
 
             default:
@@ -78,10 +97,16 @@ public class UtageSendMessage : MonoBehaviour
     /// <param name="pos01">첫번째 점의 위치</param>
     /// <param name="pos02">두번째 점의 위치</param>
     /// <param name="time">트윈 시간</param>
-    private void DrawLines(string id, float time, string fadeType, Vector2 pos01, Vector2 pos02)
+    private void DrawLines(string id, Vector2 pos01, Vector2 pos02)
     {
-        lineController_.DrawLine(id, time, fadeType, pos01, pos02, () => { isDone_ = true; });
+        lineController_.DrawLine(id, pos01, pos02, () => { isWaite_ = false; });
     }
+
+    private void SetLines(string id, float time, string fadeType)
+    {
+
+    }
+
 
     private void ConvertStringToVec2(string str, out Vector2 pos01, out Vector2 pos02)
     {

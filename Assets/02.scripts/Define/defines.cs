@@ -22,7 +22,9 @@
         {
             UnityFadeOut,
             UnityFadeIn,
-            UnityTweenLines
+            UnityLinesSet,
+            UnityLinesTween,
+            UnityLinesClean,
         }
     }
 }

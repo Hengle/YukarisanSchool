@@ -16,13 +16,35 @@ public class LineController : MonoBehaviour
     /// <param name="fadeType">페이드 유형</param>
     /// <param name="pos1">좌표 1</param>
     /// <param name="pos2">좌표 1</param>
-    public void DrawLine(string id_, float time, string fadeType, Vector2 pos1, Vector2 pos2, Action onDone)
-    {
-        //만들어 둔것이 없다면 새로 만들어서 이용한다. 
-        if (!dicLine_.ContainsKey(id_))
-            dicLine_[id_] = Instantiate(lineBase, transform).GetComponent<LineRenderController>();
-
-        dicLine_[id_].DrawLines(time, fadeType, pos1, pos2, onDone);
+    public void DrawLine(string id_,Vector2 pos1, Vector2 pos2, Action onDone)
+    {      
+        dicLine_[id_].DrawLines(pos1, pos2, onDone);
     }
 
+    /// <summary>
+    /// 선을 준비한다.
+    /// </summary>
+    /// <param name="id_">아이디</param>
+    /// <param name="time">트윈 애니메이션 시간</param>
+    /// <param name="color">선의 색</param>
+    public void SetLines(string id_, float time, string fadeType, Color color)
+    {
+        GameObject line;
+
+        //만들어 둔것이 없다면 새로 만들어서 이용한다. 
+        if (!dicLine_.ContainsKey(id_))
+        {
+            line = Instantiate(lineBase, transform);
+            dicLine_[id_] = line.GetComponent<LineRenderController>();
+        }
+    }
+
+    public void CleanAllLine()
+    {
+        foreach (KeyValuePair<string, LineRenderController> keyValuePair in dicLine_)
+        {
+            Destroy(keyValuePair.Value);
+        }
+        dicLine_.Clear();
+    }
 }

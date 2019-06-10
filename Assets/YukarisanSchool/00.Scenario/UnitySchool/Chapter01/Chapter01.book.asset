@@ -388,10 +388,10 @@ MonoBehaviour:
       debugIndex: 1
       strings:
       - SendMessage
-      - UnityTweenLines
+      - UnityLinesSet
       - 1
       - 2
-      - FadeIn
+      - (255,255,255)
       - (0,0)/(0,0)
       - 
       isEmpty: 0
@@ -400,29 +400,28 @@ MonoBehaviour:
     - rowIndex: 2
       debugIndex: 2
       strings:
+      - SendMessage
+      - UnityLinesSet
+      - 2
+      - 2
+      - (255,0,0)
+      - (0,0)/(0,0)
       - 
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - (0,0),(0,0)
       - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
-      debugIndex: 4
+      debugIndex: 3
       strings:
       - SendMessage
-      - UnityTweenLines
+      - UnityLinesTween
       - 1
-      - 2
-      - 
-      - (0,0)/(800,600)
-      - 
+      - FadeIn
+      - FALSE
+      - (0,0)/(1000,600)
       - 
       - 
       - 
@@ -430,6 +429,22 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - SendMessage
+      - UnityLinesTween
+      - 2
+      - FadeIn
+      - FALSE
+      - (0,0)/(1920,1080)
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
       debugIndex: 5
       strings:
       - 
@@ -444,79 +459,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 6
-      strings:
-      - SendMessage
-      - UnityTweenLines
-      - 1
-      - 2
-      - 
-      - (0,0)/(400,600)
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 6
-      debugIndex: 7
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - (0,0),(400,600)
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 7
-      debugIndex: 8
-      strings:
-      - SendMessage
-      - UnityTweenLines
-      - 1
-      - 2
-      - 
-      - (0,0)/(800,600)
-      - 
-      - 
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 8
-      debugIndex: 9
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - (0,0),(800,600)
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 9
-      debugIndex: 10
-      strings:
-      - SendMessage
-      - UnityTweenLines
-      - 1
-      - 2
-      - FadeOut
-      - (0,0)/(1920,1080)
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 10
-      debugIndex: 11
+      debugIndex: 6
       strings:
       - 
       - 
@@ -530,8 +474,23 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 13
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - SendMessage
+      - UnityLinesTween
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 16
       strings:
       - EndScenario
       isEmpty: 0
@@ -539,7 +498,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 391
+    textLength: 355
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -1148,10 +1107,10 @@ MonoBehaviour:
       debugIndex: 1
       strings:
       - SendMessage
-      - UnityTweenLines
+      - UnityLinesSet
       - 1
       - 2
-      - FadeIn
+      - (255,255,255)
       - (0,0)/(0,0)
       - 
       isEmpty: 0
@@ -1160,15 +1119,15 @@ MonoBehaviour:
     - rowIndex: 2
       debugIndex: 2
       strings:
+      - SendMessage
+      - UnityLinesSet
+      - 2
+      - 2
+      - (255,0,0)
+      - (0,0)/(0,0)
       - 
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - (0,0),(0,0)
       - 
       isEmpty: 0
       isCommentOut: 0
@@ -1176,25 +1135,27 @@ MonoBehaviour:
     - rowIndex: 3
       debugIndex: 3
       strings:
+      - SendMessage
+      - UnityLinesTween
+      - 1
+      - FadeIn
+      - FALSE
+      - (0,0)/(1000,600)
       - 
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
       strings:
       - SendMessage
-      - UnityTweenLines
-      - 1
+      - UnityLinesTween
       - 2
-      - 
-      - (0,0)/(800,600)
+      - FadeIn
+      - FALSE
+      - (0,0)/(1920,1080)
       - 
       - 
       - 
@@ -1220,77 +1181,6 @@ MonoBehaviour:
     - rowIndex: 6
       debugIndex: 6
       strings:
-      - SendMessage
-      - UnityTweenLines
-      - 1
-      - 2
-      - 
-      - (0,0)/(400,600)
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - (0,0),(400,600)
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
-      strings:
-      - SendMessage
-      - UnityTweenLines
-      - 1
-      - 2
-      - 
-      - (0,0)/(800,600)
-      - 
-      - 
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - (0,0),(800,600)
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
-      strings:
-      - SendMessage
-      - UnityTweenLines
-      - 1
-      - 2
-      - FadeOut
-      - (0,0)/(1920,1080)
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 11
-      debugIndex: 11
-      strings:
       - 
       - 
       - 
@@ -1303,6 +1193,45 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - SendMessage
+      - UnityLinesTween
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
     - rowIndex: 12
       debugIndex: 12
       strings: []
@@ -1311,6 +1240,24 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 13
       debugIndex: 13
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
       strings:
       - EndScenario
       isEmpty: 0
@@ -1318,7 +1265,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 391
+    textLength: 355
     headerRow: 0
   - rows:
     - rowIndex: 0
