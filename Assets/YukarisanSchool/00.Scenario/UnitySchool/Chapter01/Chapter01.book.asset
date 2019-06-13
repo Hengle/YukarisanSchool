@@ -391,7 +391,7 @@ MonoBehaviour:
       - UnityLinesSet
       - 1
       - 2
-      - (255,255,255)
+      - (255,255,255,200)
       - (0,0)/(0,0)
       - 
       isEmpty: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
       - UnityLinesSet
       - 2
       - 2
-      - (255,0,0)
+      - (255,0,0,200)
       - (0,0)/(0,0)
       - 
       - 
@@ -478,7 +478,7 @@ MonoBehaviour:
       debugIndex: 7
       strings:
       - SendMessage
-      - UnityLinesTween
+      - UnityLinesClean
       - 
       - 
       - 
@@ -490,7 +490,7 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 8
-      debugIndex: 16
+      debugIndex: 8
       strings:
       - EndScenario
       isEmpty: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 355
+    textLength: 363
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -1110,7 +1110,7 @@ MonoBehaviour:
       - UnityLinesSet
       - 1
       - 2
-      - (255,255,255)
+      - (255,255,255,200)
       - (0,0)/(0,0)
       - 
       isEmpty: 0
@@ -1123,7 +1123,7 @@ MonoBehaviour:
       - UnityLinesSet
       - 2
       - 2
-      - (255,0,0)
+      - (255,0,0,200)
       - (0,0)/(0,0)
       - 
       - 
@@ -1197,7 +1197,7 @@ MonoBehaviour:
       debugIndex: 7
       strings:
       - SendMessage
-      - UnityLinesTween
+      - UnityLinesClean
       - 
       - 
       - 
@@ -1210,54 +1210,6 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 8
       debugIndex: 8
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 11
-      debugIndex: 11
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 12
-      debugIndex: 12
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 13
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 14
-      debugIndex: 14
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
       strings:
       - EndScenario
       isEmpty: 0
@@ -1265,7 +1217,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 355
+    textLength: 363
     headerRow: 0
   - rows:
     - rowIndex: 0

@@ -16,14 +16,14 @@ public class LineRenderController : MonoBehaviour
     public float width_ = 0.2f;
 
     public float time_ = 0f;
-    private Color color_ = default;
+    private Color baseColor_ = default;
+    private Color targetColor_ = default;
     private enumFadeType enumFade;
 
 
     private void Awake()
     {
         mat_ = lineRenderer_.material;
-        color_ = mat_.color;
     }
 
     public void Update()
@@ -31,9 +31,6 @@ public class LineRenderController : MonoBehaviour
         SetLineRenderer();
     }
 
-    private void LateUpdate()
-    {
-    }
 
     public void SetLineRenderer()
     {
@@ -46,39 +43,41 @@ public class LineRenderController : MonoBehaviour
         }
     }
 
-    public void DrawLines(Vector2 pos01, Vector2 pos02, Action onDone )
+    public void DrawLines(string fadeType, Vector2 pos01, Vector2 pos02, Action onDone )
     {
+        //투명화를 위한 임시 color
+        Color tmpColor = mat_.color;
 
-        Color tmpColor = color_;
-        tmpColor.a = 0;
+        Enum.TryParse(fadeType, out enumFade);
 
         Sequence sequence;
         sequence = DOTween.Sequence();
-        sequence.OnStart( () => listPos_[0].DOAnchorPos(pos01, time_));
-
+        sequence.OnStart( () => listPos_[0].DOAnchorPos(pos01, time_));    
+        sequence.Join(listPos_[1].DOAnchorPos(pos02, time_));
         switch (enumFade)
         {
             case enumFadeType.None:
                 break;
 
             case enumFadeType.FadeIn:
-                sequence.Join( mat_.DOColor(color_, time_));
+                mat_.color = new Color(tmpColor.r, tmpColor.g, tmpColor.b, 0);
+                sequence.Join(mat_.DOColor(tmpColor, time_));
                 break;
-
             case enumFadeType.FadeOut:
+                tmpColor.a = 0f;
                 sequence.Join(mat_.DOColor(tmpColor, time_));
                 break;
         }
-
-        sequence.Join(listPos_[1].DOAnchorPos(pos02, time_));
         sequence.OnComplete(() => { onDone?.Invoke(); });        
     }
 
-    public void SetLines(float time, string fade, )
+    public void SetLines(float time, Color32 color32, Vector2 pos01, Vector2 pos02)
     {
         time_ = time;
-        Enum.TryParse(fade, out enumFade);
+        targetColor_ = color32;
+        mat_.color = color32;
+
+        listPos_[0].anchoredPosition = pos01;
+        listPos_[1].anchoredPosition = pos02;
     }
-
-
 }
