@@ -36,7 +36,7 @@ public class UtageSendMessage : MonoBehaviour
                 StartCoroutine(FadeMan.ins_.FadeInOut(enumFadeType.FadeOut, float.Parse(command.Arg2), () => { isWaite_ = false; }));
                 break;
 
-            case enumUtageSendMessage.UnityLinesSet:
+            case enumUtageSendMessage.UnityLinesCreate:
                 lineId = command.Arg2;
                 tweenTime = float.Parse(command.Arg3);
                 ConvertStringToColor32(command.Arg4, out color32);
@@ -75,7 +75,7 @@ public class UtageSendMessage : MonoBehaviour
                 command.IsWait = isWaite_;
                 break;
 
-            case enumUtageSendMessage.UnityLinesSet:
+            case enumUtageSendMessage.UnityLinesCreate:
                 command.IsWait = false;
                 break;
 

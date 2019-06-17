@@ -22,9 +22,25 @@
         {
             UnityFadeOut,
             UnityFadeIn,
-            UnityLinesSet,
-            UnityLinesTween,
+
+            UnityLinesCreate,
+            UnityLinesSetColor,
+            UnityLinesSetPosition,
+            UnityLinesSetTweenColor,
+            UnityLinesSetTweenPosition,
+            UnityLinesAddTweenColor,
+            UnityLinesAddTweenPosition,
+            UnityLinesTweenPlay,
             UnityLinesClean,
+
+            UnityArrowsSetColor,
+            UnityArrowsSetPosition,
+            UnityArrowsSetTweenColor,
+            UnityArrowsSetTweenPosition,
+            UnityArrowsAddTweenColor,
+            UnityArrowsAddTweenPosition,
+            UnityArrowsTweenPlay,
+            UnityArrowsClean
         }
     }
 }
