@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/01.scene/Home.unity
+- path: Assets/01.scene/YukarisanSchool.unity
   isLoaded: 1
   isActive: 1

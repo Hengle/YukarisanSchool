@@ -36,25 +36,55 @@ public class UtageSendMessage : MonoBehaviour
                 StartCoroutine(FadeMan.ins_.FadeInOut(enumFadeType.FadeOut, float.Parse(command.Arg2), () => { isWaite_ = false; }));
                 break;
 
+            #region 선 설정
             case enumUtageSendMessage.UnityLinesCreate:
-                lineId = command.Arg2;
-                tweenTime = float.Parse(command.Arg3);
-                ConvertStringToColor32(command.Arg4, out color32);
-                ConvertStringToVec2(command.Arg5, out pos01, out pos02);
-                SetLines(lineId, tweenTime, color32, pos01, pos02);
                 break;
 
-            case enumUtageSendMessage.UnityLinesTween:
-                lineId = command.Arg2;
-                fadeType = command.Arg3;
-                isWaite_ = (bool.Parse)(command.Arg4);
-                ConvertStringToVec2(command.Arg5, out pos01, out pos02);
-                DrawLines(lineId, fadeType, pos01, pos02);
+            case enumUtageSendMessage.UnityLinesSetColor:
+                break;
+
+            case enumUtageSendMessage.UnityLinesSetPosition:
+                break;
+
+            case enumUtageSendMessage.UnityLinesSetTweenColor:
+                break;
+
+            case enumUtageSendMessage.UnityLinesSetTweenPosition:
+                break;
+
+            case enumUtageSendMessage.UnityLinesTweenPlay:
                 break;
 
             case enumUtageSendMessage.UnityLinesClean:
                 lineController_.CleanAllLine();
-                 break;
+                break;
+            #endregion
+
+            #region 화살표 설정
+            case enumUtageSendMessage.UnityArrowsCreate:
+                break;
+
+            case enumUtageSendMessage.UnityArrowsSetColor:
+                break;
+
+            case enumUtageSendMessage.UnityArrowsSetPosition:
+                break;
+
+            case enumUtageSendMessage.UnityArrowsSetTweenColor:
+                break;
+
+            case enumUtageSendMessage.UnityArrowsSetTweenPosition:
+                break;
+
+            case enumUtageSendMessage.UnityArrowsTweenPlay:
+                break;
+
+            case enumUtageSendMessage.UnityArrowsClean:
+                break;
+
+            #endregion
+
+
 
             default:
                 Debug.Log("<color=red>존재하지 않는 메소드:" + command.Name + "</color>");
@@ -75,17 +105,38 @@ public class UtageSendMessage : MonoBehaviour
                 command.IsWait = isWaite_;
                 break;
 
+
+            #region 선 설정
             case enumUtageSendMessage.UnityLinesCreate:
-                command.IsWait = false;
-                break;
-
-            case enumUtageSendMessage.UnityLinesTween:
-                command.IsWait = isWaite_;
-                break;
-
+            case enumUtageSendMessage.UnityLinesSetColor:
+            case enumUtageSendMessage.UnityLinesSetPosition:
+            case enumUtageSendMessage.UnityLinesSetTweenColor:
+            case enumUtageSendMessage.UnityLinesSetTweenPosition:
             case enumUtageSendMessage.UnityLinesClean:
                 command.IsWait = false;
                 break;
+
+            case enumUtageSendMessage.UnityLinesTweenPlay:
+                command.IsWait = true;
+                break;
+            
+            #endregion
+
+            #region 화살표 설정
+            case enumUtageSendMessage.UnityArrowsCreate:
+            case enumUtageSendMessage.UnityArrowsSetColor:
+            case enumUtageSendMessage.UnityArrowsSetPosition:
+            case enumUtageSendMessage.UnityArrowsSetTweenColor:
+            case enumUtageSendMessage.UnityArrowsSetTweenPosition:
+            case enumUtageSendMessage.UnityArrowsClean:
+                command.IsWait = false;
+                break;
+
+            case enumUtageSendMessage.UnityArrowsTweenPlay:
+                command.IsWait = true;
+                break;
+
+            #endregion
 
             default:
                 Debug.Log("<color=red>존재하지 않는 메소드:" + command.Name + "</color>");
