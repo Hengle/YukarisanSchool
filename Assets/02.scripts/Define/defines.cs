@@ -17,31 +17,35 @@
             FadeOut,
         }
 
-        //우타게에서 보내는 SendMessage
-        public enum enumUtageSendMessage
-        {
+        //우타게에서 보내는 CustomCommand
+        public enum enumCustomCommand
+        {            
             UnityFadeOut,
             UnityFadeIn,
 
-            UnityLinesCreate,
-            UnityLinesSetColor,
-            UnityLinesSetPosition,
-            UnityLinesSetTweenColor,
-            UnityLinesSetTweenPosition,
-            UnityLinesAddTweenColor,
-            UnityLinesAddTweenPosition,
-            UnityLinesTweenPlay,
-            UnityLinesClean,
+            SetLines,
+            SetTweenColorLines,
+            SetTweenPositionLines,
+            AddTweenColorLines,
+            AddTweenPositionLines,
+            PlayTweenLines,
 
-            UnityArrowsCreate,
-            UnityArrowsSetColor,
-            UnityArrowsSetPosition,
-            UnityArrowsSetTweenColor,
-            UnityArrowsSetTweenPosition,
-            UnityArrowsAddTweenColor,
-            UnityArrowsAddTweenPosition,
-            UnityArrowsTweenPlay,
-            UnityArrowsClean
+            SetArrows,
+            SetTweenColorArrows,
+            SetTweenPositionArrows,            
+            AddTweenColorArrows,
+            AddTweenPositionArrows,
+            PlayTweenArrows,
+
+            SetRect,
+            SetTweenColorRect,
+            SetTweenPositionRect,
+            AddTweenColorRect,
+            AddTweenPositionRect,
+            PlayTweenRect,
+
+
+            RemoveAll,
         }
     }
 }
