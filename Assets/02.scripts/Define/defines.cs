@@ -45,7 +45,7 @@
             PlayTweenRect,
 
 
-            RemoveAll,
+            ClearAll,
         }
     }
 }

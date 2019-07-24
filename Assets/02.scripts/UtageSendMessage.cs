@@ -82,7 +82,7 @@ public class UtageSendMessage : MonoBehaviour
     /// <param name="pos02">두번째 점의 위치</param>
     private void SetLines(string id, float time, Color32 color, Vector2 pos01, Vector2 pos02)
     {
-        lineController_.SetLines(id, time, color, pos01, pos02);
+       
     }
 
 

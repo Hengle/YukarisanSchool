@@ -1529,6 +1529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7da25d6d7dfa2e41aa100118d32597d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lineController: {fileID: 924464083}
 --- !u!1 &581645341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53eb9f55b95cda44986589bba099c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineBase: {fileID: 3733661982877051229, guid: 0813be9f68bf7c341b7fb8dcb2fdc2a7,
+  objToDraw: {fileID: 3733661982877051229, guid: 0813be9f68bf7c341b7fb8dcb2fdc2a7,
     type: 3}
 --- !u!1 &927751754
 GameObject:
@@ -4807,7 +4808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1779405816467173604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4837,7 +4838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1956808490958053120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4882,6 +4883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Line
+      objectReference: {fileID: 0}
+    - target: {fileID: 3733661982877051229, guid: 0813be9f68bf7c341b7fb8dcb2fdc2a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3733661982877051218, guid: 0813be9f68bf7c341b7fb8dcb2fdc2a7,
         type: 3}

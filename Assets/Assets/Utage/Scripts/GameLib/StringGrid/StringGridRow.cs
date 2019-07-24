@@ -310,42 +310,42 @@ namespace Utage
 			try
 			{
 				System.Type type = typeof(T);
-				if (type == typeof(string))
-				{
-					val = (T)(object)str;
-				}
-				else if (type.IsEnum)
-				{
-					val = (T)System.Enum.Parse(typeof(T), str);
-				}
-				else if (type == typeof(Color))
-				{
-					Color color = Color.white;
-					bool ret = ColorUtil.TryParseColor(str, ref color);
-					val = ret ? (T)(object)color : default(T);
-					return ret;
-				}
-				else if( type == typeof(int) )
-				{
-					val = (T)(object)int.Parse(str);
-				}
-				else if (type == typeof(float))
-				{
-					val = (T)(object)WrapperUnityVersion.ParseFloatGlobal(str);
-				}
-				else if (type == typeof(double))
-				{
-					val = (T)(object)WrapperUnityVersion.ParseDoubleGlobal(str);
-				}
-				else if (type == typeof(bool))
-				{
-					val = (T)(object)bool.Parse(str);
-				}
-				else
-				{
-					System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(type);
-					val = (T)converter.ConvertFromString(str);
-				}
+                if (type == typeof(string))
+                {
+                    val = (T)(object)str;
+                }
+                else if (type.IsEnum)
+                {
+                    val = (T)System.Enum.Parse(typeof(T), str);
+                }
+                else if (type == typeof(Color))
+                {
+                    Color color = Color.white;
+                    bool ret = ColorUtil.TryParseColor(str, ref color);
+                    val = ret ? (T)(object)color : default(T);
+                    return ret;
+                }
+                else if (type == typeof(int))
+                {
+                    val = (T)(object)int.Parse(str);
+                }
+                else if (type == typeof(float))
+                {
+                    val = (T)(object)WrapperUnityVersion.ParseFloatGlobal(str);
+                }
+                else if (type == typeof(double))
+                {
+                    val = (T)(object)WrapperUnityVersion.ParseDoubleGlobal(str);
+                }
+                else if (type == typeof(bool))
+                {
+                    val = (T)(object)bool.Parse(str);
+                }
+                else
+                {
+                    System.ComponentModel.TypeConverter converter = System.ComponentModel.TypeDescriptor.GetConverter(type);
+                    val = (T)converter.ConvertFromString(str);
+                }
 				return true;
 			}
 			catch

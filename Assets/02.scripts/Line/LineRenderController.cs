@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using System;
 using Def.Enum;
-     
+
 
 public class LineRenderController : MonoBehaviour
 {
@@ -19,22 +19,27 @@ public class LineRenderController : MonoBehaviour
     private Color baseColor_ = default;
     private Color targetColor_ = default;
     private enumFadeType enumFade;
-
+    private Sequence seqPosition_ = default;
+    private Sequence seqColor_ = default;
 
     private void Awake()
     {
         mat_ = lineRenderer_.material;
+        seqPosition_ = DOTween.Sequence();
+        seqColor_ = DOTween.Sequence();
+
+        seqPosition_.Pause();
+        seqColor_.Pause();
     }
 
-    public void Update()
+    private void Update()
     {
         SetLineRenderer();
     }
 
-
-    public void SetLineRenderer()
+    private void SetLineRenderer()
     {
-        lineRenderer_.startWidth = width_; 
+        lineRenderer_.startWidth = width_;
         lineRenderer_.endWidth = width_;
 
         for (int index = 0; index < listPos_.Count; index++)
@@ -43,11 +48,42 @@ public class LineRenderController : MonoBehaviour
         }
     }
 
+    public void SetLines(List<Vector2> listVec2, Color32 color32)
+    {
+        mat_.color = color32;
+
+        for (int index = 0; index < listPos_.Count; index++)
+        {
+            listPos_[index].anchoredPosition = listVec2[index];
+        }
+    }
+
+    /// <summary> 트윈 애니메이션을 추가한다.</summary>
+    public void AddTweenPositionLines(List<Vector2> listVec2Target, float duration)
+    {
+        seqPosition_.Append(listPos_[0].DOAnchorPos(listVec2Target[0], duration));
+
+        if(listPos_.Count >1)
+        {
+            for (int index = 1; index < listPos_.Count; index++)
+            {
+                seqPosition_.Join(listPos_[index].DOAnchorPos(listVec2Target[index], duration));
+            }
+        }
+    }
+
+    /// <summary> 트윈 애니메이션을 추가한다.</summary>
+    public void AddTweenColorLines(Color32 color32, float duration)
+    {
+        seqColor_.Append(mat_.DOColor(color32, duration));
+    }
+
+
     /// <summary>트윈 애니메이션으로 점을 움직인다.</summary>
     /// <param name="fadeType">페이드 유형</param>
     /// <param name="listVec2"></param>
     /// <param name="onDone"></param>
-    public void TweenLines(string fadeType, List<Vector2> listVec2, Action onDone )
+    public void TweenLines(string fadeType, List<Vector2> listVec2, Action onDone)
     {
         //투명화를 위한 임시 color
         Color tmpColor = mat_.color;
@@ -76,18 +112,15 @@ public class LineRenderController : MonoBehaviour
                 sequence.Join(mat_.DOColor(tmpColor, time_));
                 break;
         }
-        sequence.OnComplete(() => { onDone?.Invoke(); });        
+        sequence.OnComplete(() => { onDone?.Invoke(); });
     }
 
-    public void SetLines(float time, Color32 color32, List<Vector2> listVec2)
+    public void PlayTweenAnimation()
     {
-        time_ = time;
-        targetColor_ = color32;
-        mat_.color = color32;
+        if(seqPosition_ != null)
+            seqPosition_.Play();
 
-        for (int index = 0; index < listPos_.Count; index++)
-        {
-            listPos_[index].anchoredPosition = listVec2[index];
-        }
+        if (seqColor_ != null)
+            seqColor_.Play();
     }
 }
