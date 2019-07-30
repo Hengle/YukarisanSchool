@@ -8,6 +8,7 @@ using Def.Enum;
 public  class CustomCommand : AdvCustomCommandManager
 {
     public LineController lineController;
+    public ArrowController arrowController;
 
     public static CustomCommand ins;
     private enumCustomCommand customCommand;
@@ -59,29 +60,35 @@ public  class CustomCommand : AdvCustomCommandManager
                     command = new AdvCommandSetLines(row);
                     break;
 
-                case enumCustomCommand.SetTweenColorLines:
-                    command = new AdvCommandSetTweenColorLines(row);
-                    break;
-
-                case enumCustomCommand.SetTweenPositionLines:
-                    Debug.Log(enumCustomCommand.SetTweenPositionLines);
-                    break;
-
                 case enumCustomCommand.AddTweenColorLines:
-                    Debug.Log(enumCustomCommand.AddTweenColorLines);
                     command = new AdvCommandAddTweenColorLines(row);
                     break;
 
                 case enumCustomCommand.AddTweenPositionLines:
-                    Debug.Log(enumCustomCommand.AddTweenPositionLines);
                     command = new AdvCommandAddTweenPositionLines(row);
 
                     break;
 
                 case enumCustomCommand.PlayTweenLines:
-                    Debug.Log(enumCustomCommand.PlayTweenLines);
                     command = new AdvCommandPlayTweenLines(row);
                     break;
+
+                case enumCustomCommand.SetArrows:
+                    command = new AdvCommandSetArrows(row);
+                    break;
+
+                case enumCustomCommand.AddTweenPositionArrows:
+                    command = new AdvCommandAddTweenPositionArrows(row);
+                    break;
+
+                case enumCustomCommand.AddTweenColorArrows:
+                    command = new AdvCommandAddTweenColorArrows(row);
+                    break;
+
+                case enumCustomCommand.PlayTweenArrows:
+                    command = new AdvCommandPlayTweenArrows(row);
+                    break;
+
 
                 case enumCustomCommand.ClearAll:
                     command = new AdvCommandClearAll(row);
@@ -170,25 +177,6 @@ public class AdvCommandPlayTweenLines : AdvCommand
 
 
 
-
-/// <summary>트윈 애니메이션을 만든다. 칼라전용</summary>
-public class AdvCommandSetTweenColorLines : AdvCommand
-{
-    public AdvCommandSetTweenColorLines(StringGridRow row) : base(row)
-    {
-
-    }
-
-    public override void DoCommand(AdvEngine engine)
-    {
-        CustomCommand.ins.lineController.dataSet.id = ParseCell<string>(AdvColumnName.Arg1);
-        CustomCommand.ins.lineController.dataSet.listVec2.Add(CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg2)));
-        CustomCommand.ins.lineController.dataSet.listVec2.Add(CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg3)));
-        CustomCommand.ins.lineController.dataSet.color32 = CustomCommand.ins.StringToColor(ParseCell<string>(AdvColumnName.Arg4));
-    }
-}
-
-
 /// <summary> 모든 선을 지운다. </summary>
 public class AdvCommandClearAll : AdvCommand
 {
@@ -199,10 +187,76 @@ public class AdvCommandClearAll : AdvCommand
 
     public override void DoCommand(AdvEngine engine)
     {
-        CustomCommand.ins.lineController.CleanAllLine();
+        CustomCommand.ins.lineController.ClearAllLine();
+        CustomCommand.ins.arrowController.ClearAllArrows();
     }
 }
 
+
+public class AdvCommandSetArrows : AdvCommand
+{
+    public AdvCommandSetArrows(StringGridRow row) : base(row)
+    {
+
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+        CustomCommand.ins.arrowController.SetArrow(
+             ParseCell<string>(AdvColumnName.Arg1),
+             CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg2)),
+             ParseCell<float>(AdvColumnName.Arg3),
+             CustomCommand.ins.StringToColor(ParseCell<string>(AdvColumnName.Arg4)));
+    }
+}
+
+
+public class AdvCommandAddTweenPositionArrows : AdvCommand
+{
+    public AdvCommandAddTweenPositionArrows(StringGridRow row) : base(row)
+    {
+
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+        CustomCommand.ins.arrowController.AddTweenPositionArrows(ParseCell<string>(AdvColumnName.Arg1),
+            CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg2)),
+            ParseCell<float>(AdvColumnName.Arg3),
+            ParseCell<float>(AdvColumnName.Arg6)
+            );
+    }
+}
+
+
+public class AdvCommandAddTweenColorArrows : AdvCommand
+{
+    public AdvCommandAddTweenColorArrows(StringGridRow row) : base(row)
+    {
+
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+        CustomCommand.ins.arrowController.AddTweenColorArrows(ParseCell<string>(AdvColumnName.Arg1),
+            CustomCommand.ins.StringToColor(ParseCell<string>(AdvColumnName.Arg4)),
+            ParseCell<float>(AdvColumnName.Arg6)
+            );
+    }
+}
+
+public class AdvCommandPlayTweenArrows : AdvCommand
+{
+    public AdvCommandPlayTweenArrows(StringGridRow row) : base(row)
+    {
+
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+        CustomCommand.ins.arrowController.PlayTweenArrows(ParseCell<string>(AdvColumnName.Arg1));
+    }
+}
 
 
 

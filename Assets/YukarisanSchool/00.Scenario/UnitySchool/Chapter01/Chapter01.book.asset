@@ -396,6 +396,22 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - SetArrows
+      - 1
+      - (20,20)
+      - '45 '
+      - (255, 0, 0, 255)
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
       debugIndex: 3
       strings:
       - 
@@ -410,24 +426,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 3
-      debugIndex: 4
-      strings:
-      - AddTweenColorLines
-      - 1
-      - 
-      - 
-      - (0, 255, 0, 255)
-      - 
-      - 1
-      - 
-      - 
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
     - rowIndex: 4
-      debugIndex: 5
+      debugIndex: 4
       strings:
       - AddTweenPositionLines
       - 1
@@ -436,11 +436,87 @@ MonoBehaviour:
       - 
       - 
       - 1
+      - 
+      - 
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - AddTweenColorLines
+      - 1
+      - 
+      - 
+      - (0, 255, 0, 255)
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
       debugIndex: 6
+      strings:
+      - PlayTweenLines
+      - 1
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - AddTweenPositionArrows
+      - 1
+      - (400,300)
+      - 90
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - AddTweenColorArrows
+      - 1
+      - 
+      - 
+      - (0, 255, 0, 255)
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - PlayTweenArrows
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - Wait
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 12
       strings:
       - AddTweenColorLines
       - 1
@@ -452,34 +528,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
-      debugIndex: 7
-      strings:
-      - AddTweenPositionLines
-      - 1
-      - (200,200)
-      - (200,200)
-      - 
-      - 
-      - 1
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 7
-      debugIndex: 8
-      strings:
-      - AddTweenColorLines
-      - 1
-      - 
-      - 
-      - (255, 255, 255, 255)
-      - 
-      - 1
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 8
-      debugIndex: 9
+    - rowIndex: 12
+      debugIndex: 13
       strings:
       - AddTweenPositionLines
       - 1
@@ -491,16 +541,62 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 9
-      debugIndex: 10
+    - rowIndex: 13
+      debugIndex: 14
       strings:
       - PlayTweenLines
       - 1
+      - 
+      - 
+      - 
+      - 
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 11
+    - rowIndex: 14
+      debugIndex: 15
+      strings:
+      - AddTweenPositionArrows
+      - 1
+      - (800,800)
+      - 1000
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 16
+      strings:
+      - AddTweenColorArrows
+      - 1
+      - 
+      - 
+      - (0, 0, 255, 255)
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 17
+      strings:
+      - PlayTweenArrows
+      - 1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 18
       strings:
       - Wait
       - 
@@ -508,27 +604,120 @@ MonoBehaviour:
       - 
       - 
       - 
-      - 3
+      - 1
+      - 
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 12
+    - rowIndex: 18
+      debugIndex: 20
       strings:
-      - ClearAll
+      - AddTweenColorLines
+      - 1
+      - 
+      - 
+      - (0, 0, 0, 0)
+      - 
+      - 1
+      - 
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 12
-      debugIndex: 14
+    - rowIndex: 19
+      debugIndex: 21
+      strings:
+      - AddTweenPositionLines
+      - 1
+      - (800,800)
+      - (800,800)
+      - 
+      - 
+      - 1
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 22
+      strings:
+      - PlayTweenLines
+      - 1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 23
+      strings:
+      - AddTweenPositionArrows
+      - 1
+      - (800,800)
+      - 300
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 24
+      strings:
+      - AddTweenColorArrows
+      - 1
+      - 
+      - 
+      - (0, 0, 0, 0)
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 25
+      strings:
+      - PlayTweenArrows
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 26
+      strings:
+      - Wait
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 28
       strings:
       - EndScenario
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 399
+    textLength: 722
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -1147,17 +1336,17 @@ MonoBehaviour:
     - rowIndex: 2
       debugIndex: 2
       strings:
+      - SetArrows
+      - 1
+      - (20,20)
+      - '45 '
+      - (255, 0, 0, 255)
       - 
       - 
       - 
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
@@ -1178,11 +1367,11 @@ MonoBehaviour:
     - rowIndex: 4
       debugIndex: 4
       strings:
-      - AddTweenColorLines
+      - AddTweenPositionLines
       - 1
+      - (400,400)
+      - (400,400)
       - 
-      - 
-      - (0, 255, 0, 255)
       - 
       - 1
       - 
@@ -1194,11 +1383,11 @@ MonoBehaviour:
     - rowIndex: 5
       debugIndex: 5
       strings:
-      - AddTweenPositionLines
+      - AddTweenColorLines
       - 1
-      - (400,400)
-      - (400,400)
       - 
+      - 
+      - (0, 255, 0, 255)
       - 
       - 1
       isEmpty: 0
@@ -1206,6 +1395,72 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 6
       debugIndex: 6
+      strings:
+      - PlayTweenLines
+      - 1
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - AddTweenPositionArrows
+      - 1
+      - (400,300)
+      - 90
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - AddTweenColorArrows
+      - 1
+      - 
+      - 
+      - (0, 255, 0, 255)
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - PlayTweenArrows
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - Wait
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
       strings:
       - AddTweenColorLines
       - 1
@@ -1217,34 +1472,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
-      strings:
-      - AddTweenPositionLines
-      - 1
-      - (200,200)
-      - (200,200)
-      - 
-      - 
-      - 1
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
-      strings:
-      - AddTweenColorLines
-      - 1
-      - 
-      - 
-      - (255, 255, 255, 255)
-      - 
-      - 1
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
+    - rowIndex: 13
+      debugIndex: 13
       strings:
       - AddTweenPositionLines
       - 1
@@ -1256,16 +1485,62 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
+    - rowIndex: 14
+      debugIndex: 14
       strings:
       - PlayTweenLines
       - 1
+      - 
+      - 
+      - 
+      - 
+      - 
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 11
-      debugIndex: 11
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - AddTweenPositionArrows
+      - 1
+      - (800,800)
+      - 1000
+      - 
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - AddTweenColorArrows
+      - 1
+      - 
+      - 
+      - (0, 0, 255, 255)
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - PlayTweenArrows
+      - 1
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
       strings:
       - Wait
       - 
@@ -1273,118 +1548,53 @@ MonoBehaviour:
       - 
       - 
       - 
-      - 3
+      - 1
+      - 
+      - 
       isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 12
-      debugIndex: 12
-      strings:
-      - ClearAll
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 13
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 14
-      debugIndex: 14
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 15
-      debugIndex: 15
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 16
-      debugIndex: 16
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 17
-      debugIndex: 17
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 18
-      debugIndex: 18
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 19
       debugIndex: 19
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
+      strings: []
       isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 20
       strings:
+      - AddTweenColorLines
+      - 1
       - 
       - 
+      - (0, 0, 0, 0)
+      - 
+      - 1
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 21
       debugIndex: 21
       strings:
+      - AddTweenPositionLines
+      - 1
+      - (800,800)
+      - (800,800)
       - 
       - 
+      - 1
       - 
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      isEmpty: 1
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 22
       debugIndex: 22
       strings:
+      - PlayTweenLines
+      - 1
       - 
       - 
       - 
@@ -1392,33 +1602,78 @@ MonoBehaviour:
       - 
       - 
       - 
-      - 
-      - 
-      isEmpty: 1
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 23
       debugIndex: 23
-      strings: []
-      isEmpty: 1
+      strings:
+      - AddTweenPositionArrows
+      - 1
+      - (800,800)
+      - 300
+      - 
+      - 
+      - 1
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 24
       debugIndex: 24
       strings:
+      - AddTweenColorArrows
+      - 1
+      - 
+      - 
+      - (0, 0, 0, 0)
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings:
+      - PlayTweenArrows
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 26
+      strings:
+      - Wait
       - 
       - 
       - 
       - 
       - 
-      - 
-      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 27
+      strings: []
       isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 28
+      strings:
+      - EndScenario
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 399
+    textLength: 722
     headerRow: 0
   - rows:
     - rowIndex: 0

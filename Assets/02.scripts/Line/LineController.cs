@@ -5,11 +5,11 @@ using System;
 
 public class LineController : MonoBehaviour
 {
-    public GameObject objToDraw = default;
+    public GameObject objLine = default;
     public AdvCommanDataSetBase dataSet = default;   
     private List<Vector2> listVec2 = default;
 
-    private Dictionary<string, LineRenderController> dicLine_ = new Dictionary<string, LineRenderController>();
+    private Dictionary<string, LineRendererController> dicLine_ = new Dictionary<string, LineRendererController>();
 
     private void Awake()
     {
@@ -27,11 +27,13 @@ public class LineController : MonoBehaviour
         //만들어 둔것이 없다면 새로 만들어서 이용한다. 
         if (!dicLine_.ContainsKey(id))
         {
-            obj = Instantiate(objToDraw, transform);
-            dicLine_[id] = obj.GetComponent<LineRenderController>();
+            obj = Instantiate(objLine, transform);
+            dicLine_[id] = obj.GetComponent<LineRendererController>();
         }
         dicLine_[id].SetLines(listVec2, color);
     }
+
+
 
     /// <summary> 선의 트윈애니메이션을 추가</summary>
     public void AddTweenPositionLines(string id, List<Vector2> listVec2, float duration)
@@ -74,27 +76,12 @@ public class LineController : MonoBehaviour
         {
             dicLine_[id].PlayTweenAnimation();
         }
-    }
+    }  
 
-
-    /// <summary>선의 id를 검사하여, 이미 만들었으면 만든 선으로, 없으면 선을 만들어 이용한다. </summary>
-    /// <param name="id_">선의 아이디</param>
-    /// <param name="fadeType">페이드 유형</param>
-    /// <param name="pos01">좌표 1</param>
-    /// <param name="pos02">좌표 2</param>
-    /// <param name="onDone">이 선의 트윈 애니메이션이 끝났을 때 할 일</param>
-    public void TweenLine(string id_, string fadeType, Vector2 pos01, Vector2 pos02, Action onDone)
-    {
-        listVec2 = new List<Vector2>() { pos01, pos02 };
-        dicLine_[id_].TweenLines(fadeType, listVec2, onDone);
-    }
-
-   
-
-    public void CleanAllLine()
+    public void ClearAllLine()
     {
         Debug.Log("모든 선을 삭제한다");
-        foreach (KeyValuePair<string, LineRenderController> keyValuePair in dicLine_)
+        foreach (KeyValuePair<string, LineRendererController> keyValuePair in dicLine_)
         {
             Destroy(keyValuePair.Value.gameObject);
         }

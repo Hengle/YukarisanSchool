@@ -24,26 +24,19 @@
             UnityFadeIn,
 
             SetLines,
-            SetTweenColorLines,
-            SetTweenPositionLines,
             AddTweenColorLines,
             AddTweenPositionLines,
             PlayTweenLines,
 
-            SetArrows,
-            SetTweenColorArrows,
-            SetTweenPositionArrows,            
+            SetArrows,      
             AddTweenColorArrows,
             AddTweenPositionArrows,
             PlayTweenArrows,
 
             SetRect,
-            SetTweenColorRect,
-            SetTweenPositionRect,
             AddTweenColorRect,
             AddTweenPositionRect,
             PlayTweenRect,
-
 
             ClearAll,
         }

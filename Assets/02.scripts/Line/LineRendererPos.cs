@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LineRendererPos : MonoBehaviour
 {
-    public LineRenderController lineRendererCtrl_ = default;
+    public LineRendererController lineRendererCtrl_ = default;
     public Collider col_ = default;
     public RectTransform rectTransform_ = default;
 
