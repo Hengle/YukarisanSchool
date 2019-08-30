@@ -9,6 +9,7 @@ public  class CustomCommand : AdvCustomCommandManager
 {
     public LineController lineController;
     public ArrowController arrowController;
+    public RectController rectController;
 
     public static CustomCommand ins;
     private enumCustomCommand customCommand;
@@ -89,6 +90,21 @@ public  class CustomCommand : AdvCustomCommandManager
                     command = new AdvCommandPlayTweenArrows(row);
                     break;
 
+                case enumCustomCommand.SetRect:
+                    command = new AdvCommandSetRect(row);
+                    break;
+
+                case enumCustomCommand.AddTweenColorRect:
+                    command = new AdvCommandAddTweenColorRect(row);
+                    break;
+
+                case enumCustomCommand.AddTweenPositionRect:
+                    command = new AdvCommandAddTweenPositionRect(row);
+                    break;
+
+                case enumCustomCommand.PlayTweenRect:
+                    command = new AdvCommandPlayTweenRect(row);
+                    break;
 
                 case enumCustomCommand.ClearAll:
                     command = new AdvCommandClearAll(row);
@@ -259,5 +275,84 @@ public class AdvCommandPlayTweenArrows : AdvCommand
 }
 
 
+
+/// <summary>
+/// /
+/// 
+/// </summary>
+
+
+public class AdvCommandSetRect : AdvCommand
+{
+    public AdvCommandSetRect(StringGridRow row) : base(row)
+    {
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+
+        CustomCommand.ins.rectController.dataSet.id = ParseCell<string>(AdvColumnName.Arg1);
+        CustomCommand.ins.rectController.dataSet.listVec2.Add(CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg2)));
+        CustomCommand.ins.rectController.dataSet.listVec2.Add(CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg3)));
+        CustomCommand.ins.rectController.dataSet.color32 = CustomCommand.ins.StringToColor(ParseCell<string>(AdvColumnName.Arg4));
+
+        CustomCommand.ins.rectController.SetRect(
+            CustomCommand.ins.rectController.dataSet.id,
+            CustomCommand.ins.rectController.dataSet.listVec2,
+            CustomCommand.ins.rectController.dataSet.color32);
+
+    }
+}
+
+
+public class AdvCommandAddTweenPositionRect : AdvCommand
+{
+    public AdvCommandAddTweenPositionRect(StringGridRow row) : base(row)
+    {
+
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+        CustomCommand.ins.rectController.AddTweenPositionLines(
+            ParseCell<string>(AdvColumnName.Arg1),
+            new List<Vector2> { CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg2)), CustomCommand.ins.StringToVec2(ParseCell<string>(AdvColumnName.Arg3)) },
+            ParseCell<float>(AdvColumnName.Arg6)
+        );
+    }
+}
+
+
+public class AdvCommandAddTweenColorRect : AdvCommand
+{
+    public AdvCommandAddTweenColorRect(StringGridRow row) : base(row)
+    {
+
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+        CustomCommand.ins.rectController.AddTweenColorLines(
+            ParseCell<string>(AdvColumnName.Arg1),
+            CustomCommand.ins.StringToColor(ParseCell<string>(AdvColumnName.Arg4)),
+            ParseCell<float>(AdvColumnName.Arg6)
+            );
+    }
+}
+
+public class AdvCommandPlayTweenRect : AdvCommand
+{
+    public AdvCommandPlayTweenRect(StringGridRow row) : base(row)
+    {
+
+    }
+
+    public override void DoCommand(AdvEngine engine)
+    {
+        CustomCommand.ins.rectController.PlayTweenLines(
+            ParseCell<string>(AdvColumnName.Arg1)
+            );
+    }
+}
 
 
