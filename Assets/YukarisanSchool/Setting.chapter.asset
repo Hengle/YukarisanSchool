@@ -46,36 +46,34 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
-      - 3DTest
+      - "\uC720\uCE74\uB9AC"
+      - "\uC720\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
       - 
       - 
       - 
       - 
       - 
       - 
-      - 5
-      - 
-      - Vroid.prefab
-      - 
-      - 3DPrefab
+      - "\uC720\uCE74\uB9AC/\uBCF4\uD1B5.bmp"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
       strings:
-      - unitychan
+      - 
+      - 
+      - "\uAE30\uC068"
       - 
       - 
       - 
       - 
       - 
       - 
-      - 5
+      - "\uC720\uCE74\uB9AC/\uAE30\uC068.bmp"
       - 
-      - SD_unitychan_humanoid.prefab
       - 
-      - 3DPrefab
       - 
       - 
       - 
@@ -87,9 +85,687 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings:
+      - 
+      - 
+      - "\uAE84"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uAE84.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - 
+      - 
+      - "\uB2F9\uD669"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uB2F9\uD669.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - 
+      - 
+      - "\uBA38\uC4F1"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uBA38\uC4F1.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - 
+      - 
+      - "\uBD84\uB17801"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uBD84\uB17801.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - 
+      - 
+      - "\uBD84\uB17802"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uBD84\uB17802.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings:
+      - 
+      - 
+      - "\uBE59\uAE0001"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uBE59\uAE0001.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
+      strings:
+      - 
+      - 
+      - "\uBE59\uAE0002"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uBE59\uAE0002.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 10
+      debugIndex: 10
+      strings:
+      - 
+      - 
+      - "\uC0AC\uB9DD"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC0AC\uB9DD.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 11
+      debugIndex: 11
+      strings:
+      - 
+      - 
+      - "\uC2AC\uD514"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC2AC\uD514.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 12
+      debugIndex: 12
+      strings:
+      - 
+      - 
+      - "\uC58001"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC58001.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 13
+      debugIndex: 13
+      strings:
+      - 
+      - 
+      - "\uC58002"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC58002.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 14
+      debugIndex: 14
+      strings:
+      - 
+      - 
+      - "\uC719\uD06C01"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC719\uD06C01.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 15
+      debugIndex: 15
+      strings:
+      - 
+      - 
+      - "\uC719\uD06C02"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC719\uD06C02.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - 
+      - 
+      - "\uC758\uC2EC01"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC758\uC2EC01.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - 
+      - 
+      - "\uC758\uC2EC02"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC758\uC2EC02.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - 
+      - 
+      - "\uC778\uB0B401"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC778\uB0B401.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
+      debugIndex: 19
+      strings:
+      - 
+      - 
+      - "\uC778\uB0B402"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uC778\uB0B402.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 20
+      debugIndex: 20
+      strings:
+      - 
+      - 
+      - "\uD53C\uB85C"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uD53C\uB85C.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 21
+      debugIndex: 21
+      strings:
+      - 
+      - 
+      - "\uD68C\uD53C01"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uD68C\uD53C01.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 22
+      debugIndex: 22
+      strings:
+      - 
+      - 
+      - "\uD68C\uD53C02"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC720\uCE74\uB9AC/\uD68C\uD53C02.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 23
+      debugIndex: 23
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 24
+      debugIndex: 24
+      strings:
+      - "\uC544\uCE74\uB9AC"
+      - "\uC544\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uBCF4\uD1B5.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 25
+      debugIndex: 25
+      strings:
+      - 
+      - 
+      - "\uAE30\uC068"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uAE30\uC068.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 26
+      debugIndex: 26
+      strings:
+      - 
+      - 
+      - "\uAE84"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uAE84.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 27
+      debugIndex: 27
+      strings:
+      - 
+      - 
+      - "\uB2F9\uD669"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uB2F9\uD669.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 28
+      debugIndex: 28
+      strings:
+      - 
+      - 
+      - "\uBA38\uC4F1"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uBA38\uC4F1.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 29
+      debugIndex: 29
+      strings:
+      - 
+      - 
+      - "\uBD84\uB17801"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uBD84\uB17801.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 30
+      debugIndex: 30
+      strings:
+      - 
+      - 
+      - "\uBD84\uB17802"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uBD84\uB17802.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 31
+      debugIndex: 31
+      strings:
+      - 
+      - 
+      - "\uBE59\uAE0001"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uBE59\uAE0001.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 32
+      debugIndex: 32
+      strings:
+      - 
+      - 
+      - "\uBE59\uAE0002"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uBE59\uAE0002.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 33
+      debugIndex: 33
+      strings:
+      - 
+      - 
+      - "\uC0AC\uB9DD"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC0AC\uB9DD.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 34
+      debugIndex: 34
+      strings:
+      - 
+      - 
+      - "\uC2AC\uD514"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC2AC\uD514.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 35
+      debugIndex: 35
+      strings:
+      - 
+      - 
+      - "\uC58001"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC58001.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 36
+      debugIndex: 36
+      strings:
+      - 
+      - 
+      - "\uC58002"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC58002.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 37
+      debugIndex: 37
+      strings:
+      - 
+      - 
+      - "\uC719\uD06C01"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC719\uD06C01.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 38
+      debugIndex: 38
+      strings:
+      - 
+      - 
+      - "\uC719\uD06C02"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC719\uD06C02.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 39
+      debugIndex: 39
+      strings:
+      - 
+      - 
+      - "\uC758\uC2EC01"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC758\uC2EC01.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 40
+      debugIndex: 40
+      strings:
+      - 
+      - 
+      - "\uC758\uC2EC02"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC758\uC2EC02.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 41
+      debugIndex: 41
+      strings:
+      - 
+      - 
+      - "\uC778\uB0B401"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC778\uB0B401.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 42
+      debugIndex: 42
+      strings:
+      - 
+      - 
+      - "\uC778\uB0B402"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uC778\uB0B402.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 43
+      debugIndex: 43
+      strings:
+      - 
+      - 
+      - "\uD53C\uB85C"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uD53C\uB85C.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 44
+      debugIndex: 44
+      strings:
+      - 
+      - 
+      - "\uD68C\uD53C01"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uD68C\uD53C01.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 45
+      debugIndex: 45
+      strings:
+      - 
+      - 
+      - "\uD68C\uD53C02"
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\uC544\uCE74\uB9AC/\uD68C\uD53C02.bmp"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/00.Setting/Setting.xls:Character
     type: 1
-    textLength: 227
+    textLength: 794
     headerRow: 0
   - rows:
     - rowIndex: 0
@@ -158,17 +834,62 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
-      - Normal
+      - middleRight
       - Character
-      - 
+      - 460
       - 
       - 0
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - middleLeft
+      - Character
+      - -460
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 3
+      debugIndex: 3
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
+      debugIndex: 4
+      strings:
+      - bottomRight01
+      - Character
+      - 750
+      - 0
+      - 2
+      - 
+      - .4
+      - .4
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings:
+      - bottomRight02
+      - Character
+      - 750
+      - -200
+      - 3
+      - 
+      - .4
+      - .4
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/00.Setting/Setting.xls:Layer
     type: 1
-    textLength: 125
+    textLength: 222
     headerRow: 0
   - rows:
     - rowIndex: 0

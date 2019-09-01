@@ -426,7 +426,7 @@ MonoBehaviour:
       debugIndex: 4
       strings:
       - 
-      - 
+      - "\uC720\uCE74\uB9AC"
       - 
       - 
       - 
@@ -763,7 +763,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 848
+    textLength: 851
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -789,72 +789,62 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 1
-      debugIndex: 14
+      debugIndex: 1
       strings:
       - 
-      - 3DTest
-      - Normal
+      - "\uC720\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - middleRight
       - 
       - 
       - 
       - 
-      - 
-      - aaa
+      - "\u3141"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
-      debugIndex: 15
+      debugIndex: 2
       strings:
       - 
-      - unitychan
-      - Normal
+      - "\uC544\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - middleLeft
       - 
       - 
       - 
       - 
-      - 
-      - aaa
+      - "\u3141"
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
-      debugIndex: 17
+      debugIndex: 5
       strings:
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - a
+      - "\uC720\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - bottomRight01
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 4
-      debugIndex: 18
+      debugIndex: 6
       strings:
       - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - a
+      - "\uC544\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - bottomRight02
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
-      debugIndex: 19
+      debugIndex: 7
       strings:
       - 
-      - 
-      - 
-      - 
+      - "\uC720\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - bottomRight01
       - 
       - 
       - 
@@ -864,21 +854,6 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 6
-      debugIndex: 20
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - a
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 7
       debugIndex: 22
       strings:
       - EndScenario
@@ -887,7 +862,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:Unity01_01
     type: 1
-    textLength: 129
+    textLength: 180
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -1410,7 +1385,7 @@ MonoBehaviour:
       debugIndex: 4
       strings:
       - 
-      - 
+      - "\uC720\uCE74\uB9AC"
       - 
       - 
       - 
@@ -1780,7 +1755,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:TestMode
     type: 1
-    textLength: 848
+    textLength: 851
     headerRow: 0
   - rows:
     - rowIndex: 0
@@ -1805,14 +1780,32 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 1
       debugIndex: 1
-      strings: []
-      isEmpty: 1
+      strings:
+      - 
+      - "\uC720\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - middleRight
+      - 
+      - 
+      - 
+      - 
+      - "\u3141"
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
-      strings: []
-      isEmpty: 1
+      strings:
+      - 
+      - "\uC544\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - middleLeft
+      - 
+      - 
+      - 
+      - 
+      - "\u3141"
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
@@ -1829,20 +1822,37 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 5
       debugIndex: 5
-      strings: []
-      isEmpty: 1
+      strings:
+      - 
+      - "\uC720\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - bottomRight01
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 6
       debugIndex: 6
-      strings: []
-      isEmpty: 1
+      strings:
+      - 
+      - "\uC544\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - bottomRight02
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 7
       debugIndex: 7
-      strings: []
-      isEmpty: 1
+      strings:
+      - 
+      - "\uC720\uCE74\uB9AC"
+      - "\uBCF4\uD1B5"
+      - bottomRight01
+      - 
+      - 
+      - 
+      - 
+      - a
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 8
@@ -1883,32 +1893,14 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 14
       debugIndex: 14
-      strings:
-      - 
-      - 3DTest
-      - Normal
-      - 
-      - 
-      - 
-      - 
-      - 
-      - aaa
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 15
       debugIndex: 15
-      strings:
-      - 
-      - unitychan
-      - Normal
-      - 
-      - 
-      - 
-      - 
-      - 
-      - aaa
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 16
@@ -1919,62 +1911,26 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 17
       debugIndex: 17
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - a
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 18
       debugIndex: 18
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - a
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 19
       debugIndex: 19
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - a
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 20
       debugIndex: 20
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - a
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 21
@@ -1992,7 +1948,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:Unity01_01
     type: 1
-    textLength: 129
+    textLength: 180
     headerRow: 0
   - rows:
     - rowIndex: 0
