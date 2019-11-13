@@ -858,9 +858,39 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
+    - rowIndex: 1
+      debugIndex: 1
+      strings:
+      - test001
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - test/test001.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 2
+      debugIndex: 2
+      strings:
+      - test002
+      - Bg
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - test/test002.png
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/00.Setting/Setting.xls:Texture
     type: 1
-    textLength: 112
+    textLength: 162
     headerRow: 0
   - rows:
     - rowIndex: 0
@@ -902,23 +932,25 @@ MonoBehaviour:
     - rowIndex: 1
       debugIndex: 1
       strings:
-      - middleRight
-      - Character
-      - 460
+      - BgLayer
+      - Bg
+      - 
       - 
       - 0
+      - 
+      - 1
+      - 1
+      - 
+      - 
+      - 1920
+      - 1080
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 2
       debugIndex: 2
-      strings:
-      - middleLeft
-      - Character
-      - -460
-      - 
-      - 1
-      isEmpty: 0
+      strings: []
+      isEmpty: 1
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
@@ -929,6 +961,46 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 5
+      debugIndex: 5
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 6
+      debugIndex: 6
+      strings:
+      - middleRight
+      - Character
+      - 460
+      - 
+      - 0
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 7
+      debugIndex: 7
+      strings:
+      - middleLeft
+      - Character
+      - -460
+      - 
+      - 1
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 8
+      strings: []
+      isEmpty: 1
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
+      debugIndex: 9
       strings:
       - bottomRight01
       - Character
@@ -941,8 +1013,8 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
+    - rowIndex: 10
+      debugIndex: 10
       strings:
       - bottomRight02
       - Character
@@ -957,7 +1029,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/00.Setting/Setting.xls:Layer
     type: 1
-    textLength: 222
+    textLength: 242
     headerRow: 0
   - rows:
     - rowIndex: 0

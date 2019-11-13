@@ -819,6 +819,15 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 3
+      debugIndex: 4
+      strings:
+      - Bg
+      - test001
+      - BgLayer
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 4
       debugIndex: 5
       strings:
       - 
@@ -828,7 +837,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 4
+    - rowIndex: 5
       debugIndex: 6
       strings:
       - 
@@ -838,7 +847,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 5
+    - rowIndex: 6
       debugIndex: 7
       strings:
       - 
@@ -853,7 +862,31 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 6
+    - rowIndex: 7
+      debugIndex: 8
+      strings:
+      - Tween
+      - "\uC720\uCE74\uB9AC"
+      - MoveTo
+      - time=1 y=-100 islocal=true
+      - 
+      - 
+      - 
+      - NoWait
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 8
+      debugIndex: 9
+      strings:
+      - Tween
+      - "\uC544\uCE74\uB9AC"
+      - PunchPosition
+      - time=1 y=50
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 9
       debugIndex: 22
       strings:
       - EndScenario
@@ -862,7 +895,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:Unity01_01
     type: 1
-    textLength: 180
+    textLength: 274
     headerRow: 0
     entityIndexTbl: 
     entityDataList: []
@@ -1816,8 +1849,11 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 4
       debugIndex: 4
-      strings: []
-      isEmpty: 1
+      strings:
+      - Bg
+      - test001
+      - BgLayer
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 5
@@ -1857,14 +1893,26 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 8
       debugIndex: 8
-      strings: []
-      isEmpty: 1
+      strings:
+      - Tween
+      - "\uC720\uCE74\uB9AC"
+      - MoveTo
+      - time=1 y=-100 islocal=true
+      - 
+      - 
+      - 
+      - NoWait
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 9
       debugIndex: 9
-      strings: []
-      isEmpty: 1
+      strings:
+      - Tween
+      - "\uC544\uCE74\uB9AC"
+      - PunchPosition
+      - time=1 y=50
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 10
@@ -1948,7 +1996,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/YukarisanSchool/00.Scenario/UnitySchool/Chapter01/Chapter01.xls:Unity01_01
     type: 1
-    textLength: 180
+    textLength: 274
     headerRow: 0
   - rows:
     - rowIndex: 0
